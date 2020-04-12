@@ -15,7 +15,7 @@ function App() {
       <Layout className="site-layout">
          <Sidebar/>
         <Content className="content-wrapper">
-          <Route exact path="/first-page" component={ First } />
+          <Route exact path="/" component={ First } />
           <Route exact path="/second-page" component={ Second } />
           <Route exact path="/third-page" component={ Third }></Route>
         </Content>

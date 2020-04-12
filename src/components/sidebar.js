@@ -52,7 +52,7 @@ export default class Sidebar extends React.Component {
 		<Layout>
 			<Header className="header-topbar">
 				<div className="logo">
-					<Link to="/first-page">Logo</Link>
+					<Link to="/">Logo</Link>
 				</div>
 				<div className="language-menu">
 					<Dropdown overlay={menu} >
@@ -68,7 +68,7 @@ export default class Sidebar extends React.Component {
 		  <div className="logo" />
 		  <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
 			 <Menu.Item key="1">
-			 <Link to="/first-page">
+			 <Link to="/">
 				<UserOutlined />
 				<span className="nav-text">nav 1</span>
 			 </Link>
@@ -92,7 +92,7 @@ export default class Sidebar extends React.Component {
 				 </Link>
 			 </Menu.Item>
 			 <Menu.Item key="5">
-				 <Link to="/first-page">
+				 <Link to="/">
 					<CloudOutlined />
 					<span className="nav-text">nav 5</span>
 				</Link>
