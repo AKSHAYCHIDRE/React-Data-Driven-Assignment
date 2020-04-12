@@ -1,0 +1,246 @@
+body{
+    background-color: #343a40;
+    font-family: Poppins-Regular;
+}
+::-webkit-scrollbar{
+	width:7px;
+}
+::-webkit-scrollbar-thumb{
+	background-color:#69717B;
+	border-radius:3px;
+}
+::-webkit-scrollbar-track{
+	border-radius:10px;
+}
+
+/* Font  */
+
+@font-face{
+    font-family: Poppins-Regular;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+  }
+  @font-face{
+    font-family: Poppins-Medium;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+  }
+  @font-face{
+    font-family: Poppins-Bold;
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+  }
+  @font-face{
+    font-family: Poppins-Semi-Bold;
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+/* side bar and header css here  */
+.logo{
+    letter-spacing: 0.8px;
+    font-size: 24px;
+}
+.site-layout{
+    margin-left: 200px;
+    background-color: transparent;
+}
+.sidebar{
+    overflow: hidden;
+    height: 100vh;
+    left: 0;
+    background-color: #37404a;
+    position: fixed;
+    top: 0;
+}
+.ant-menu.ant-menu-dark, 
+.ant-menu-dark .ant-menu-sub{
+    background-color: #37404a;
+}
+.header-topbar{
+    padding: 0px 30px;
+    background-color: #404954;
+    min-height: 72px;
+    box-shadow: 0 0 35px 0 rgba(49,57,66,.5);
+    overflow: hidden;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.language-dropdown-menu{
+    transition: all .3s ease;
+    box-shadow: 0 0 35px 0 rgba(49,57,66,.5);
+    min-width: 160px;
+    padding: 0;
+    top: 24px;
+    color: #aab8c5;
+    background-color: #464f5b;
+    border: 1px solid #4d5764;
+    border-radius: 4px;
+}
+.language-dropdown-menu img{
+    width: 18px;
+    height: 12px;
+    margin-right: 10px;
+}
+.language-dropdown-menu .ant-dropdown-menu-item a{
+    font-size: 14px;
+    color: #aab8c5;
+}
+.language-dropdown-menu .ant-dropdown-menu-item:hover{
+    background-color: #4d5764;
+}
+.language-menu .ant-dropdown-link{
+    color: #ced4da;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+/*  content wrapper css here  */
+
+.content-wrapper{
+    padding: 5px 20px;
+}
+
+
+/*  First page css here  */
+
+.page-title{
+    color: #4daaf2;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+.services-section .title{
+    font-weight: 500;
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 38px;
+    margin-left: 15px;
+}
+.card-section{
+    padding-top: 15px;
+}
+.card-section .ant-card-meta-title {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.card-section .card-item .card-body,
+.card-section .card-item .ant-card-body{
+    padding: 0;
+}
+.card-section .card-item{
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    text-align: center;
+    border: none;
+    width: 348px;
+    display: inline-block;
+    box-shadow: 0 0 35px 0 rgba(49,57,66,.5);
+    margin: 15px 11px 15px 15px;
+    background: #37404a;
+    border-radius: 4px;
+}   
+.card-section .card-image{
+    height: 64px;
+    width: 64px;
+    margin: auto;
+}
+.card-section .ant-card-meta-description{
+    line-height: 1.8;
+    color: #8391a2;
+    font-size: 15px;
+}
+
+/*  Table css here */
+.tabel-data{
+    margin-top: 20px;
+}
+.ant-table-container table > thead > tr:first-child th:first-child,
+.ant-table-container table > thead > tr:first-child th:last-child{
+    border-radius: 0;
+}
+.ant-table-tbody > tr.ant-table-row:hover > td{
+    background: #3e4853;
+    cursor: pointer;
+}
+.ant-table-thead > tr > th{
+    color: #aab8c5;   
+    border-top: 1px solid #464f5b;
+    border-bottom: 1px solid #464f5b;
+    background: #37404a;
+}
+.ant-table-tbody > tr > td {
+    background-color: #37404a;
+    border-bottom: 1px solid #464f5b;
+}
+.ant-pagination-item-active {
+    z-index: 3;
+    color: #fff;
+    background-color: #4daaf2;
+    border-color: #4daaf2;
+}
+.ant-pagination-item-active a{
+    color: #fff;
+}
+.ant-pagination-item-active:focus, 
+.ant-pagination-item-active:hover{
+    border-color: transparent;
+}
+.ant-pagination-item-active:focus a, 
+.ant-pagination-item-active:hover a{
+    color: #fff;
+}
+.ant-pagination-prev .ant-pagination-item-link, 
+.ant-pagination-next .ant-pagination-item-link{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    border: 0;
+    color: #8391a2;
+    background-color: #3e4853;
+}
+.ant-pagination-disabled a, 
+.ant-pagination-disabled:hover a, 
+.ant-pagination-disabled:focus a, 
+.ant-pagination-disabled .ant-pagination-item-link, 
+.ant-pagination-disabled:hover .ant-pagination-item-link, 
+.ant-pagination-disabled:focus .ant-pagination-item-link {
+    color: #d9d9d9;
+    border-color: #d9d9d9;
+    cursor: not-allowed;
+}
+table{
+    color: #aab8c5;
+}
+
+/*  Collapse section css here */
+
+.collapse-section{
+    margin-top: 20px;
+}
+.ant-collapse > .ant-collapse-item{
+    border: 0;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    background-color: #404954;
+    color: white;
+    border-radius: 0;
+    border-bottom: 1px solid #464f5b;
+}
+.ant-collapse > .ant-collapse-item:last-child, 
+.ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header{
+    border-radius: 0;
+}
+.ant-collapse-item:last-child > .ant-collapse-content{
+    border-radius: 0;
+    background: #37404a;
+    border: 0;
+    color: white;
+}
+.ant-collapse {
+    border: 0;
+    background-color: transparent;
+}
